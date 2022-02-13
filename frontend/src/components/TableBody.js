@@ -27,7 +27,7 @@ export const TableBody = ({ data, columns }) => {
         <tbody>
             {data.map((row, index) => 
                 <tr key={index}>
-                    { editIndex === index ? <EditRow columns={columns} isEnter={isEnter} row={row} index={index} /> : <TableRow columns={columns} row={row} /> }
+                    { editIndex === index ? <EditRow columns={columns} isEnter={isEnter} row={row} index={index} /> : <TableRow row={row} /> }
                     <th>{editIndex == null ? <button onClick={() => dispatch(SET_EDIT_INDEX(index))} className="editButton">Edit</button> : <button onClick={() => dispatch(SET_EDIT_INDEX(null))} className="editButton">Done</button> }</th>
                     <th><button onClick={() => deleteUser(index)} className="deleteButton">Delete</button></th>
                 </tr>   
