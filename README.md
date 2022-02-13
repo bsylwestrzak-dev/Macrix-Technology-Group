@@ -17,7 +17,7 @@ cd backend
 npm install
 ```
 
-3: Create .env file in root directory (use env.example for key referances)
+3: Create .env file in backend root directory (use env.example for key referances)
 
 4: Start server
 ```sh
@@ -36,7 +36,7 @@ cd frontend
 npm install
 ```
 
-3: Create .env file in root directory (use env.example for key referances)
+3: Create .env file in frontend root directory (use env.example for key referances)
 
 4: Run the application
 ```sh
